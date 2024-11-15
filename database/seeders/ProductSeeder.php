@@ -63,7 +63,7 @@ class ProductSeeder extends Seeder
             if ($type == "Man") {
                 Product::create([
                     'category_id'   => $category,
-                    'image'         => '/assets/client/images/content/products/product-' . rand(1, 8) . '.jpg',
+                    'image'         => '/assets/client/images/content/products/giay-' . rand(1, 6) . '.jpg',
                     'name'          => $nam,
                     'SKU'           => "OB" . Str::random(3) . rand(10000, 99999),
                     'base_stock' => 50,
@@ -85,7 +85,7 @@ class ProductSeeder extends Seeder
             if ($type == "Woman") {
                 Product::create([
                     'category_id'   => $category,
-                    'image'         => '/assets/client/images/content/products/product-' . rand(9, 17) . '.jpg',
+                    'image'         => '/assets/client/images/content/products/giay-' . rand(1, 6) . '.jpg',
                     'name'          => $nu,
                     'SKU'           => "OB" . Str::random(3) . rand(10000, 99999),
                     'base_stock' => 50,
