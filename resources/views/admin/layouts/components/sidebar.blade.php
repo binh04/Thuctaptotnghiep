@@ -23,10 +23,6 @@
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="{{ route('admin.post.index') }}">
-                                <i class="fas fa-file-text"></i>Bài viết</a>
-                        </li>
-                        <li>
                             <a href="{{ route('admin.category.index') }}">
                                 <i class="fas fa-list-ul"></i>Danh mục</a>
                         </li>
@@ -65,35 +61,9 @@
                             <a href="{{ route('admin.products.variants.getAllAttribute') }}">
                                 <i class="fas fa-code-fork"></i>Thuộc tính biến thể</a>
                         </li>
-                        <li>
-                            <a href="{{ route('admin.inventories.index') }}">
-                                <i class="fas fa-archive"></i>Tồn kho</a>
-                        </li>
                     </ul>
                 </li>
 
-                <li class="has-sub">
-                    <a class="js-arrow" href="#">
-                        <i class="fas fa-bullhorn"></i>Quảng cáo
-                        <span class="arrow">
-                            <i class="fas fa-angle-down"></i>
-                        </span>
-                    </a>
-                    <ul class="list-unstyled navbar__sub-list js-sub-list">
-                        <li>
-                            <a href="{{ route('admin.slider.index') }}">
-                                <i class="far fa-window-restore"></i>Slider chính</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('admin.slider.banner1.index') }}">
-                                <i class="far fa-window-maximize"></i>Banner giảm giá</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('admin.slider.banner2.index') }}">
-                                <i class="far fa-window-maximize"></i>Banner giới thiệu</a>
-                        </li>
-                    </ul>
-                </li>
             </ul>
         </nav>
     </div>
