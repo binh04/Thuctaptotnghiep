@@ -105,10 +105,6 @@ Route::group(['middleware' => ['role:Quản lý']], function () {
                 Route::put('/{id}/update-status', [OrderController::class, 'updateStatus'])->name('updateStatus');
             });
 
-            // Route quản lý tồn kho 
-            Route::prefix('inventories')->as('inventories.')->group(function () {
-                Route::get('/', [InventoryController::class, 'index'])->name('index');
-            });
         });
 });
 
